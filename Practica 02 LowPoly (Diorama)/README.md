@@ -1,8 +1,13 @@
 Objetivo:
+
 utilizar extrusión
+
 utilizar cortes
+
 utilizar  primitivas básicas
+
 utilizar herramientas de selección
+
 
 
 
