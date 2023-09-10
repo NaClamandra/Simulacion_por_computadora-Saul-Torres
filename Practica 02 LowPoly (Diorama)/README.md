@@ -1,5 +1,15 @@
-Crea un Pirámide hecha con cubos
+Objetivo:
+utilizar extrusión
+utilizar cortes
+utilizar  primitivas básicas
+utilizar herramientas de selección
 
 
-![image](https://github.com/NaClamandra/Simulacion_por_computadora-Saul-Torres/assets/74439320/b183cb08-3d10-411a-ac33-43f3ab144542)
-![image](https://github.com/NaClamandra/Simulacion_por_computadora-Saul-Torres/assets/74439320/63f2120d-bc9b-4f1a-a413-8bc8c1218a20)
+
+Desarrollo 
+Crea una diorama basado en bajos polígonos usando un programa de modelado 3D
+
+
+![image](https://github.com/NaClamandra/Simulacion_por_computadora-Saul-Torres/assets/74439320/a87c1ddf-eacd-462a-baa2-a05a11530108)
+
+![image](https://github.com/NaClamandra/Simulacion_por_computadora-Saul-Torres/assets/74439320/bc191cf5-679d-473e-a1a6-ec903e2e52f7)
