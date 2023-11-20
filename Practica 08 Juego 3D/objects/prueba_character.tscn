@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://3l3e2c7t2kqp"]
+
+[ext_resource type="PackedScene" uid="uid://xy8rvnjp22n5" path="res://models/character.glb" id="1_16usg"]
+[ext_resource type="ArrayMesh" uid="uid://rofwairo0xu0" path="res://KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Dummy_Base.obj" id="2_xf0d6"]
+[ext_resource type="ArrayMesh" uid="uid://qh788xdjhmfy" path="res://KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Dummy_Base_Dummy_Body.obj" id="3_lt0qp"]
+[ext_resource type="ArrayMesh" uid="uid://84024wdafpmr" path="res://KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Dummy_Base_Dummy_Body_Dummy_ArmLeft.obj" id="4_2g40e"]
+[ext_resource type="ArrayMesh" uid="uid://k4ve40gcrox7" path="res://KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Dummy_Base_Dummy_Body_Dummy_ArmRight.obj" id="5_6ns06"]
+[ext_resource type="ArrayMesh" uid="uid://bi61k8jfo7gur" path="res://KayKit_Prototype_Bits_1.0_FREE/Assets/obj/Dummy_Base_Dummy_Body_Dummy_Head.obj" id="6_6ypcl"]
+
+[node name="character" instance=ExtResource("1_16usg")]
+
+[node name="leg-left" parent="character2/root" index="0"]
+mesh = ExtResource("2_xf0d6")
+
+[node name="leg-right" parent="character2/root" index="1"]
+mesh = ExtResource("2_xf0d6")
+
+[node name="torso" parent="character2/root" index="2"]
+mesh = ExtResource("3_lt0qp")
+
+[node name="arm-left" parent="character2/root/torso" index="0"]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, 0.3, 0.175, 0)
+mesh = ExtResource("4_2g40e")
+
+[node name="arm-right" parent="character2/root/torso" index="1"]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, -0.3, 0.1195, 0)
+mesh = ExtResource("5_6ns06")
+
+[node name="antenna" parent="character2/root/torso" index="2"]
+mesh = ExtResource("6_6ypcl")

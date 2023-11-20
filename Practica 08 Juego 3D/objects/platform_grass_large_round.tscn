@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://uqr4hswv6d2g"]
+
+[ext_resource type="PackedScene" uid="uid://fqfc0dtl2xlc" path="res://models/platform-grass-large-round.glb" id="1_k36fp"]
+[ext_resource type="ArrayMesh" uid="uid://b82ad0bm683vc" path="res://KayKit_Furniture_Bits_1.0_FREE/Assets/obj/bed_double_B.obj" id="2_iubwp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0vpv4"]
+
+[node name="platform-grass-large-round" instance=ExtResource("1_k36fp")]
+
+[node name="platform-grass-large-round2" parent="." index="0"]
+mesh = ExtResource("2_iubwp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="platform-grass-large-round2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="0"]
+transform = Transform3D(2.96, 0, 0, 0, 0.45, 0, 0, 0, 2.825, 0, 0.26196, 0)
+shape = SubResource("BoxShape3D_0vpv4")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="1"]
+transform = Transform3D(1.1, 0, 0, 0, 0.405, 0, 0, 0, 0.615, -0.682507, 0.541489, -0.691154)
+shape = SubResource("BoxShape3D_0vpv4")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="2"]
+transform = Transform3D(1.1, 0, 0, 0, 0.405, 0, 0, 0, 0.615, 0.617929, 0.541489, -0.691154)
+shape = SubResource("BoxShape3D_0vpv4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="3"]
+transform = Transform3D(2.96, 0, 0, 0, 0.36, 0, 0, 0, 0.21, 0, 0.499789, 1.30582)
+shape = SubResource("BoxShape3D_0vpv4")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="4"]
+transform = Transform3D(2.96, 0, 0, 0, 0.36, 0, 0, 0, 0.21, 0, 0.74411, -1.34412)
+shape = SubResource("BoxShape3D_0vpv4")
